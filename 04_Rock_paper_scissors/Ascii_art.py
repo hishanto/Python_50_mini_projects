@@ -25,6 +25,4 @@ scissors = '''
       (____)
 ---.__(___)
 '''
-print(rock)
-print(paper)
-print(scissors)
+draw = [rock, paper, scissors]
