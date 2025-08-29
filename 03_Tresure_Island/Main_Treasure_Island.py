@@ -1,1 +1,1 @@
-print("Welcome to Tresure Islad")
+print("Welcome to Treasure Islad")
