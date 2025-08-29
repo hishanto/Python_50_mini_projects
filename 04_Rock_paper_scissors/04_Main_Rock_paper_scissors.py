@@ -1,29 +1,4 @@
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-print(rock)
-print(paper)
-print(scissors)
+import random
+import Ascii_art
+print("Welcome To Rock Paper Scissors game\n")
+print(" For Rock enter: 0\n For paper enter: 1\n For scissors enter: 2")
