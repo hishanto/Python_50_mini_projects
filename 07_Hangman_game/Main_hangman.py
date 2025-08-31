@@ -2,6 +2,8 @@ word_list = ["aardvark", "baboon", "camel"]
 
 import random
 import Hangman_asciiArt
+
+print(Hangman_asciiArt.logo)
 word_list = ["aardvark", "baboon", "camel"]
 lives = 6 # number of choices a player will have
 
