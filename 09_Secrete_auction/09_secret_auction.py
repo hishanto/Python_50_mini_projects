@@ -21,8 +21,9 @@ def compareBids():
     for keys in storage_dict:
         if storage_dict[keys] > highestBid:
             highestBid = storage_dict[keys]
+            winner = keys
 
-    print(f"{highestBid}")
+    print(f"{winner} is the  winner, the bid was {highestBid}")
 #Continue input from the player
 while ContinueInput == True:
     userInput()
