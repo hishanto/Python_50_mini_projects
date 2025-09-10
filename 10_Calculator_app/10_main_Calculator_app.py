@@ -12,8 +12,16 @@ operations = {
   "*": multiply,
   "/": divide,
 }
-firstVar = int(input("Enter the 1st Number: "))
-userIn = input("Enter the operation you want to execute")
-lastVar = int(input("Enter the 2nd Number: "))
-result = operations[userIn](firstVar, lastVar)
-print(result)
+loopContinue = True
+while loopContinue:
+    firstVar = int(input("Enter the 1st Number: "))
+    for symbol in operations:
+        print(symbol + "\n")
+    userIn = input("Enter the operation you want to execute: ")
+    lastVar = int(input("Enter the 2nd Number: "))
+    result = operations[userIn](firstVar, lastVar)
+    print(f"{firstVar} {userIn} {lastVar} = {result}")
+
+    again = input("Still need to calculate ?\n 'Yes' or 'No' " ).lower()
+    if again != "yes":
+        loopContinue = False
