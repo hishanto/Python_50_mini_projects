@@ -12,9 +12,10 @@ operations = {
   "*": multiply,
   "/": divide,
 }
+firstVar = int(input("Enter the 1st Number: "))
 loopContinue = True
 while loopContinue:
-    firstVar = int(input("Enter the 1st Number: "))
+
     for symbol in operations:
         print(symbol + "\n")
     userIn = input("Enter the operation you want to execute: ")
@@ -22,6 +23,8 @@ while loopContinue:
     result = operations[userIn](firstVar, lastVar)
     print(f"{firstVar} {userIn} {lastVar} = {result}")
 
-    again = input("Still need to calculate ?\n 'Yes' or 'No' " ).lower()
+    again = input("Accumuate ?\n 'Yes' or 'No' " ).lower()
     if again != "yes":
         loopContinue = False
+    else:
+        firstVar = result
